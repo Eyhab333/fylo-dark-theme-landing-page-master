@@ -1,0 +1,271 @@
+@import "function";
+
+// RESETS
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+// /* ####### */
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  body {
+
+  }
+
+  header {
+
+    .logo-and-links {
+
+      .logo {
+
+      }
+
+      nav {
+
+        ul {
+
+          li {
+
+            a {
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  main {
+
+    .hero {
+
+    }
+
+    .flex {
+      display: flex;
+    }
+
+    .stay {
+
+      .image {
+
+      }
+
+      h3 {
+
+      }
+
+      p {
+
+      }
+
+      .securely {
+
+      }
+
+      .link-and-icon-arrow {
+
+        a {
+
+        }
+
+        .icon-arrow {
+          
+        }
+      }
+    }
+
+    .grid {
+
+      .box {
+
+        p {
+
+        }
+
+        .avatar-and-info {
+
+          .avatar {
+
+          }
+
+          .name {
+
+          }
+
+          .rule {
+
+          }
+        }
+      }
+    }
+
+    .get {
+
+      h4 {
+
+      }
+
+      p {
+
+      }
+
+      form {
+
+        input[type="email"] {
+          
+        }
+
+        input[type="submit"] {
+
+        }
+      }
+    }
+  }
+
+  footer {
+    .logo {
+
+    }
+
+    .footer-grid {
+
+      .location {
+
+        .icon {
+
+        }
+
+        p {
+
+        }
+      }
+
+      .phone-and-email {
+
+        .phone {
+
+          
+        }
+
+        .email {
+
+          
+        }
+
+        .icon {
+
+        }
+
+        p {
+
+        }
+      }
+
+      .links-first {
+      }
+
+      .links-second {
+      }
+
+      ul {
+
+        li {
+
+          a {
+
+          }
+        }
+      }
+
+      .social-media {
+
+        .icon-social {
+
+          i {
+
+          }
+        }
+      }
+    }
+  }
+}
+
+/*############ for-tablet-portrait-up ##############*/
+@media (min-width: 600px) {}
+
+/*############ for-tablet-landscape-up #############*/
+@media (min-width: 900px) {}
+
+/*############ for-desktop-up ###########*/
+@media (min-width: 1200px) {}
+
+/*############ for-big-desktop-up ##########*/
+@media (min-width: 1800px) {}
