@@ -70,8 +70,246 @@ ul {
 
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
+  body {
+    background: #181f2b;
+  }
+  header {
+    padding: 1.5rem 1.5rem 3rem 1.25rem;
+  }
+  header .logo-and-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header .logo-and-links .logo {
+    width: 80px;
+    height: 24px;
+  }
+  header .logo-and-links nav ul {
+    display: flex;
+  }
+  header .logo-and-links nav ul li + li {
+    margin-left: 1.5625rem;
+  }
+  header .logo-and-links nav ul li a {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+  }
+  main .hero {
+    padding: 0rem 2.1875rem 7.5rem 2.25rem;
+  }
+  main .hero .image-hero {
+    margin-bottom: 2.0625rem;
+  }
+  main .hero h1 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 0.9375rem;
+  }
+  main .hero p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 2rem;
+  }
+  main .hero button {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
   main .flex {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .flex .flex-item .icon {
+    width: 80px;
+    height: 80px;
+  }
+  main .flex .flex-item h2 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: #ffffff;
+  }
+  main .flex .flex-item p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    text-align: center;
+    color: #ffffff;
+  }
+  main .stay .image {
+    width: 304px;
+  }
+  main .stay h3 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    text-align: center;
+    color: #ffffff;
+  }
+  main .stay p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    color: #ffffff;
+  }
+  main .stay .link-and-icon-arrow a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #62e0d9;
+  }
+  main .stay .link-and-icon-arrow .icon-arrow {
+    width: 12px;
+    height: 12px;
+  }
+  main .grid .box {
+    width: 280px;
+    height: 160px;
+  }
+  main .grid .box p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 18px;
+    /* or 180% */
+    color: #ffffff;
+  }
+  main .grid .box .avatar-and-info .avatar {
+    width: 24px;
+    height: 24px;
+  }
+  main .grid .box .avatar-and-info .name {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 12px;
+    /* identical to box height, or 120% */
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  main .grid .box .avatar-and-info .rule {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7px;
+    line-height: 10px;
+    /* identical to box height, or 143% */
+    letter-spacing: 0.5px;
+    color: #ffffff;
+  }
+  main .get h4 {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height, or 133% */
+    color: #ffffff;
+  }
+  main .get p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* or 150% */
+    text-align: center;
+    color: #ffffff;
+  }
+  main .get form input[type=submit] {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+  }
+  footer {
+    background: #0b1524;
+  }
+  footer .logo {
+    width: 108px;
+    height: 31px;
+  }
+  footer .footer-grid .location .icon {
+    width: 24px;
+    height: 24px;
+  }
+  footer .footer-grid .location p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+    color: #ffffff;
+  }
+  footer .footer-grid .phone-and-email .icon {
+    width: 24px;
+    height: 24px;
+  }
+  footer .footer-grid .phone-and-email p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    /* identical to box height, or 150% */
+    text-align: center;
+    color: #ffffff;
+  }
+  footer .footer-grid ul li a {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    /* identical to box height */
+    color: #ffffff;
+  }
+  footer .footer-grid .social-media .icon-social i {
+    font-size: 18px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 50%;
   }
 }
 /*############ for-tablet-portrait-up ##############*/

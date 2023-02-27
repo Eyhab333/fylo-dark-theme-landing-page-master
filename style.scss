@@ -76,25 +76,37 @@ ul {
 /*##### for-phone-only ##########*/
 @media (max-width: 599px) {
   body {
-
+    background: #181f2b;
   }
 
   header {
-
+    padding: toRem(24) toRem(24) toRem(48) toRem(20);
     .logo-and-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
       .logo {
-
+        width: 80px;
+        height: 24px;
       }
 
       nav {
 
         ul {
+          display: flex;
 
+          li + li {
+            margin-left: toRem(25);
+          }
           li {
-
             a {
-
+              font-family: "Raleway";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 14px;
+              color: #ffffff;
             }
           }
         }
@@ -103,129 +115,282 @@ ul {
   }
 
   main {
-
     .hero {
+      padding: toRem(0) toRem(35) toRem(120) toRem(36);
+      .image-hero {
+        margin-bottom: toRem(33);
+      }
 
+      h1 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        /* or 150% */
+
+        text-align: center;
+
+        color: #ffffff;
+        margin-bottom: toRem(15);
+      }
+
+      p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* or 150% */
+
+        text-align: center;
+
+        color: #ffffff;
+        margin-bottom: toRem(32);
+      }
+
+      button {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+
+        color: #ffffff;
+      }
     }
 
     .flex {
       display: flex;
+      flex-direction: column;
+      align-items: center;
+      
+      .flex-item {
+        .icon {
+          width: 80px;
+          height: 80px;
+        }
+
+        h2 {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height, or 133% */
+
+          text-align: center;
+
+          color: #ffffff;
+        }
+
+        p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          /* or 150% */
+
+          text-align: center;
+
+          color: #ffffff;
+        }
+      }
     }
 
     .stay {
-
       .image {
-
+        width: 304px;
       }
 
       h3 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
 
+        text-align: center;
+
+        color: #ffffff;
       }
 
       p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* or 150% */
 
+        color: #ffffff;
       }
 
       .securely {
-
       }
 
       .link-and-icon-arrow {
-
         a {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
 
+          color: #62e0d9;
         }
 
         .icon-arrow {
-          
+          width: 12px;
+          height: 12px;
         }
       }
     }
 
     .grid {
-
       .box {
-
+        width: 280px;
+        height: 160px;
         p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 10px;
+          line-height: 18px;
+          /* or 180% */
 
+          color: #ffffff;
         }
 
         .avatar-and-info {
-
           .avatar {
-
+            width: 24px;
+            height: 24px;
           }
 
           .name {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 10px;
+            line-height: 12px;
+            /* identical to box height, or 120% */
 
+            letter-spacing: 0.5px;
+
+            color: #ffffff;
           }
 
           .rule {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 7px;
+            line-height: 10px;
+            /* identical to box height, or 143% */
 
+            letter-spacing: 0.5px;
+
+            color: #ffffff;
           }
         }
       }
     }
 
     .get {
-
       h4 {
+        font-family: "Raleway";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
 
+        color: #ffffff;
       }
 
       p {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        /* or 150% */
 
+        text-align: center;
+
+        color: #ffffff;
       }
 
       form {
-
         input[type="email"] {
-          
         }
 
         input[type="submit"] {
+          font-family: "Raleway";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 16px;
 
+          color: #ffffff;
         }
       }
     }
   }
 
   footer {
-    .logo {
+    background: #0b1524;
 
+    .logo {
+      width: 108px;
+      height: 31px;
     }
 
     .footer-grid {
-
       .location {
-
         .icon {
-
+          width: 24px;
+          height: 24px;
         }
 
         p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
 
+          color: #ffffff;
         }
       }
 
       .phone-and-email {
-
         .phone {
-
-          
         }
 
         .email {
-
-          
         }
 
         .icon {
-
+          width: 24px;
+          height: 24px;
         }
 
         p {
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          /* identical to box height, or 150% */
 
+          text-align: center;
+
+          color: #ffffff;
         }
       }
 
@@ -236,21 +401,27 @@ ul {
       }
 
       ul {
-
         li {
-
           a {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 22px;
+            /* identical to box height */
 
+            color: #ffffff;
           }
         }
       }
 
       .social-media {
-
         .icon-social {
-
           i {
-
+            font-size: 18px;
+            color: white;
+            border: 1px solid white;
+            border-radius: 50%;
           }
         }
       }
@@ -259,13 +430,17 @@ ul {
 }
 
 /*############ for-tablet-portrait-up ##############*/
-@media (min-width: 600px) {}
+@media (min-width: 600px) {
+}
 
 /*############ for-tablet-landscape-up #############*/
-@media (min-width: 900px) {}
+@media (min-width: 900px) {
+}
 
 /*############ for-desktop-up ###########*/
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
 /*############ for-big-desktop-up ##########*/
-@media (min-width: 1800px) {}
+@media (min-width: 1800px) {
+}
