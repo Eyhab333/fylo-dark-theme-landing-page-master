@@ -99,8 +99,16 @@ ul {
     line-height: 14px;
     color: #ffffff;
   }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   main .hero {
     padding: 0rem 2.1875rem 7.5rem 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   main .hero .image-hero {
     margin-bottom: 2.0625rem;
@@ -134,15 +142,29 @@ ul {
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
+    width: 240px;
+    height: 48px;
+    background: linear-gradient(134.79deg, #63e1d9 -42.11%, #34a0cd 100%);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 24px;
   }
   main .flex {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 33px;
+    margin-bottom: 160px;
+  }
+  main .flex .flex-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 80px;
   }
   main .flex .flex-item .icon {
     width: 80px;
     height: 80px;
+    margin-bottom: 24px;
   }
   main .flex .flex-item h2 {
     font-family: "Raleway";
@@ -153,6 +175,7 @@ ul {
     /* identical to box height, or 133% */
     text-align: center;
     color: #ffffff;
+    margin-bottom: 8px;
   }
   main .flex .flex-item p {
     font-family: "Open Sans";
@@ -164,8 +187,16 @@ ul {
     text-align: center;
     color: #ffffff;
   }
+  main .stay {
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 28px;
+  }
   main .stay .image {
     width: 304px;
+    margin-bottom: 48px;
   }
   main .stay h3 {
     font-family: "Raleway";
@@ -173,9 +204,9 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    /* identical to box height, or 133% */
     text-align: center;
     color: #ffffff;
+    margin-bottom: 16px;
   }
   main .stay p {
     font-family: "Open Sans";
@@ -185,6 +216,14 @@ ul {
     line-height: 21px;
     /* or 150% */
     color: #ffffff;
+    margin-bottom: 16px;
+  }
+  main .stay .link-and-icon-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-start;
+    border-bottom: 1px solid #62e0d9;
   }
   main .stay .link-and-icon-arrow a {
     font-family: "Open Sans";
@@ -193,14 +232,39 @@ ul {
     font-size: 12px;
     line-height: 16px;
     color: #62e0d9;
+    margin-right: 7px;
   }
   main .stay .link-and-icon-arrow .icon-arrow {
     width: 12px;
     height: 12px;
   }
+  main .grid {
+    margin-bottom: 160px;
+  }
+  main .grid .box + .box {
+    margin-top: 24px;
+  }
+  main .grid .first-box {
+    position: relative;
+  }
+  main .grid .first-box::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: -16px;
+    width: 28px;
+    height: 20px;
+    background-image: url(./images/bg-quotes.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   main .grid .box {
+    padding: 24px 20px 21px 20px;
     width: 280px;
     height: 160px;
+    background: #202a3c;
+    box-shadow: 0px 0px 8px 4px rgba(56, 56, 56, 0.0458843);
+    border-radius: 3.93258px;
   }
   main .grid .box p {
     font-family: "Open Sans";
@@ -208,12 +272,21 @@ ul {
     font-weight: 400;
     font-size: 10px;
     line-height: 18px;
-    /* or 180% */
     color: #ffffff;
+    margin-bottom: 17px;
+  }
+  main .grid .box .avatar-and-info {
+    display: flex;
+    align-items: center;
   }
   main .grid .box .avatar-and-info .avatar {
     width: 24px;
     height: 24px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+  main .grid .box .avatar-and-info .avatar img {
+    border-radius: 50%;
   }
   main .grid .box .avatar-and-info .name {
     font-family: "Open Sans";
@@ -221,9 +294,9 @@ ul {
     font-weight: 700;
     font-size: 10px;
     line-height: 12px;
-    /* identical to box height, or 120% */
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-bottom: 4px;
   }
   main .grid .box .avatar-and-info .rule {
     font-family: "Open Sans";
@@ -231,9 +304,17 @@ ul {
     font-weight: 400;
     font-size: 7px;
     line-height: 10px;
-    /* identical to box height, or 143% */
     letter-spacing: 0.5px;
     color: #ffffff;
+    margin-bottom: 0;
+  }
+  main .get {
+    width: 336px;
+    padding: 40px 28px 37px 28px;
+    background: #1b2330;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.254274);
+    border-radius: 9px;
+    margin-bottom: -177px;
   }
   main .get h4 {
     font-family: "Raleway";
@@ -241,8 +322,9 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    /* identical to box height, or 133% */
+    text-align: center;
     color: #ffffff;
+    margin-bottom: 16px;
   }
   main .get p {
     font-family: "Open Sans";
@@ -250,28 +332,65 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* or 150% */
     text-align: center;
     color: #ffffff;
+    margin-bottom: 32px;
+  }
+  main .get form input[type=email] {
+    width: 280px;
+    height: 48px;
+    margin-bottom: 24px;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px rgba(7, 4, 59, 0.157043);
+    border-radius: 24px;
+    padding-left: 29px;
+  }
+  main .get form ::-moz-placeholder {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #c0c0c0;
+  }
+  main .get form ::placeholder {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 14px;
+    color: #c0c0c0;
   }
   main .get form input[type=submit] {
+    width: 280px;
+    height: 48px;
     font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
     color: #ffffff;
+    background: linear-gradient(132.02deg, #63e1d9 -31.85%, #34a0cd 100%);
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+    border-radius: 24px;
   }
   footer {
     background: #0b1524;
+    padding: 16.1875rem 1.75rem 3.25rem 1.75rem;
   }
   footer .logo {
     width: 108px;
     height: 31px;
+    margin-bottom: 35px;
+  }
+  footer .footer-grid .location {
+    display: flex;
+    align-items: flex-start;
   }
   footer .footer-grid .location .icon {
-    width: 24px;
+    width: 54px;
     height: 24px;
+    margin-right: 16px;
   }
   footer .footer-grid .location p {
     font-family: "Open Sans";
@@ -279,8 +398,31 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    /* or 150% */
     color: #ffffff;
+  }
+  footer .footer-grid .phone-and-email {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-grid .phone-and-email .phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+  footer .footer-grid .phone-and-email .phone .icon {
+    margin-right: 14px;
+    width: 20px;
+    height: 100%;
+  }
+  footer .footer-grid .phone-and-email .email {
+    display: flex;
+    align-items: center;
+  }
+  footer .footer-grid .phone-and-email .email .icon {
+    margin-right: 14px;
+    width: 20px;
+    height: 100%;
   }
   footer .footer-grid .phone-and-email .icon {
     width: 24px;
@@ -292,9 +434,18 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* identical to box height, or 150% */
     text-align: center;
     color: #ffffff;
+  }
+  footer .footer-grid .links-first {
+    margin-top: 56px;
+    margin-bottom: 48px;
+  }
+  footer .footer-grid .links-second {
+    margin-bottom: 56px;
+  }
+  footer .footer-grid ul li + li {
+    margin-top: 16px;
   }
   footer .footer-grid ul li a {
     font-family: "Open Sans";
@@ -302,14 +453,26 @@ ul {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height */
     color: #ffffff;
+  }
+  footer .footer-grid .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 104px;
+    margin: 0 auto;
+  }
+  footer .footer-grid .social-media .icon-social {
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
   }
   footer .footer-grid .social-media .icon-social i {
     font-size: 18px;
     color: white;
-    border: 1px solid white;
-    border-radius: 50%;
   }
 }
 /*############ for-tablet-portrait-up ##############*/
