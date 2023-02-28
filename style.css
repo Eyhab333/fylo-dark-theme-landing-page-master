@@ -172,7 +172,6 @@ ul {
     font-weight: 700;
     font-size: 18px;
     line-height: 24px;
-    /* identical to box height, or 133% */
     text-align: center;
     color: #ffffff;
     margin-bottom: 8px;
@@ -183,7 +182,6 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* or 150% */
     text-align: center;
     color: #ffffff;
   }
@@ -214,7 +212,6 @@ ul {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-    /* or 150% */
     color: #ffffff;
     margin-bottom: 16px;
   }
@@ -567,7 +564,7 @@ ul {
   main .flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 79px 147px;
+    gap: 99px 147px;
     margin-bottom: 137px;
   }
   main .flex::before {
