@@ -586,12 +586,10 @@ ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
     width: 349px;
   }
   main .flex .flex-item .icon {
-    width: 104px;
-    height: 104px;
+    width: 80px;
     margin-bottom: 24px;
   }
   main .flex .flex-item .icon-security img {
@@ -824,8 +822,8 @@ ul {
     padding: 10.5625rem 5.0625rem 3.3125rem 7.5rem;
   }
   footer .logo {
-    width: 108px;
-    height: 31px;
+    width: 128px;
+    height: 51px;
     margin-bottom: 35px;
   }
   footer .footer-grid {
